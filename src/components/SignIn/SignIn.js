@@ -33,6 +33,7 @@ import React from 'react';
             password: this.state.signInPassword
             })
         })
+        /*
         .then(response => response.json())
         .then(data =>{
           if(data === 'success'){
@@ -40,35 +41,18 @@ import React from 'react';
           }
         this.props.onRouteChange('home')
         })
+        */
+       .then(response=>response.json())
+       .then(user =>{
+         if(user.id){
+           this.props.loadUser(user);
+           this.props.onRouteChange('home');
+         }
+       })
         
-        //this.props.onRouteChange('home');
      }
      
-     /*
-    onSubmitSignIn = () => {
-        
-        fetch('http://localhost:3010/register', {
-          method: 'post',
-          headers: {'Content-Type':'application/json'},
-          body: JSON.stringify({
-            email: this.state.email,
-            password: this.state.password,
-          })
-        })
-          .then(response => response.json())
-          .then(user => {
-            alert(user.email)
-            /*
-            if (user) {
-              alert("hay usuario")
-            }
-          
-          })
-        
-        
-      }
-      
-      */
+    
     render(){
         
         return (
