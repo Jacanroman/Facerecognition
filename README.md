@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FaceRecognition
 
-## Available Scripts
+The app sends the public URL of images to Clarifai and receives co-ordinates of all the faces in the image.
+The app uses Clarifai’s face detection model API to detect faces in images.
+The app was deployed to Heroku via Github integration. (That it takes a bit time because it is 
+on the free plan which means the app goes to sleep often and needs time to wake up when it's accesed).
 
-In the project directory, you can run:
+The hosted version of the application is available here: [https://smart-brainre.herokuapp.com/]
+(https://smart-brainre.herokuapp.com/)
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- New user registration
+- Existing user login
+- picture counter for each user
+- drawing square aroung face in picture
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+### Technology Used
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Front End: 
+      -React 
+      -JavaScript 
+      -Tachyions
+      -React.js-Tilt (for the logo)
+      -React-particles-js (for the background)
+      
+- Back End:
+      - Node.js
+      - Express
+      - Clarifai.FaceDetectModel (image-recognition API)
+      - PostgreSQL
+      - Knex.js (query builder for Postgres).
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ScreenShots
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/Register.png" alt="Image_web" /></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/Signin.png" alt="Image_web" /></a>
 
-### `npm run eject`
+<a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/main.png" alt="Image_web" /></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/main1.png" alt="Image_web" /></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+      
+### Running the application locally
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Clone the application and install dependencies:
 
-## Learn More
+  npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start the application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  npm start
 
-### Code Splitting
+The application will then be accessible at:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[http://localhost:3000](http://localhost:3000)
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
