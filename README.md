@@ -39,9 +39,9 @@ The hosted version of the application is available here: [https://smart-brainre.
 
 <a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/Signin.png" alt="Image_web" /></a>
 
-<a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/main.png" alt="Image_web" /></a>
-
 <a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/main1.png" alt="Image_web" /></a>
+
+<a href="[https://smart-brainre.herokuapp.com/]"><img src="https://github.com/Jacanroman/Facerecognition/blob/master/images/main.png" alt="Image_web" /></a>
 
 
       
